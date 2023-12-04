@@ -1,0 +1,1086 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten al tamaño de la pantalla */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#contenedor-espacio {
+    width: 100%;
+    max-width: 100%;
+    height: 50px; /* Altura fija de 50 píxeles */
+    background-color: white; /* Fondo blanco */
+}
+
+#contenedor-espacio-small {
+    width: 100%;
+    max-width: 100%;
+    height: 20px; /* Altura fija de 50 píxeles */
+    background-color: white; /* Fondo blanco */
+}
+
+@keyframes changeImage {
+0%, 100% {
+background-image: url('https://i0.wp.com/hotbook.mx/wp-content/uploads/2014/10/hotbook-94.jpg?fit=1024%2C768&ssl=1'); /* Cambia 'imagen1.jpg' por la URL de la primera imagen */
+}
+25% {
+background-image: url('https://www.arquitecturaydiseno.es/medio/2023/06/09/la-gran-ola-de-kanagawa-katsushika-hokusai-1830-1833_84e24115_230609112211_1280x794.jpg'); /* Cambia 'imagen2.jpg' por la URL de la segunda imagen */
+}
+50% {
+background-image: url('https://media.admagazine.com/photos/618a69ee3174d0288cf2d3bf/master/w_1600%2Cc_limit/68707.jpg'); /* Cambia 'imagen2.jpg' por la URL de la segunda imagen */
+}
+75% {
+background-image: url('https://www.arquitecturaydiseno.es/medio/2023/05/31/creacion-de-adan-en-la-capilla-sixtina-miguel-angel-buonarroti-1508-1512_5a516deb_230531142003_2000x1141.jpg'); /* Cambia 'imagen4.jpg' por la URL de la cuarta imagen */
+}
+}
+
+
+#contenedor-fijo {
+    width: 100%;
+    max-width: 100%;
+    height: 500px; /* Altura fija del contenedor */
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Para recortar la imagen si es más grande que el contenedor */
+    animation: changeImage 20s infinite; /* Cambia '10s' por la duración de cada imagen y ajusta según tu preferencia */
+    background-size: cover;
+    background-position: center;
+}
+
+#contenedor-fijo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para el texto encima del contenedor */
+#texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    font-size: 30px;
+    font-family: "Roboto";
+    color: #ffffff;
+    z-index: 2; /* Para que el texto esté encima de la imagen */
+}
+
+/* Estilos para el contenedor horizontal */
+#contenedor-horizontal {
+    width: 100%;
+    max-width: calc(100% - 200px); /* Ancho máximo con espacios de 100px en ambos extremos */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    display: flex;
+    justify-content: space-between; /* Espacio entre los extremos */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+#contenedor-horizontal-small {
+  width: 100%;
+  max-width: calc(100% - 120px); /* Ancho máximo con espacios de 100px en ambos extremos */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  display: flex;
+  justify-content: space-between; /* Espacio entre los extremos */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* Estilos para el texto en el extremo izquierdo */
+#texto-izquierdo {
+  font-size: 1.5rem;
+    font-family: "Roboto";
+    color: #000000; /* Cambia el color del texto a tu gusto */
+}
+
+/* Estilos para el enlace en el extremo derecho */
+#enlace-derecho {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: #353535; /* Cambia el color del enlace a tu gusto */
+    text-decoration: underline;
+}
+
+#nuevo-contenedor-gris {
+    width: 100%;
+    max-width: 100%;
+    height: 460px;
+    background-color:#dce0e6; 
+    margin: 0px 0; /* Espacio vertical entre contenedores */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+#nuevo-contenedor-gris-small {
+  width: 100%;
+  max-width: 100%;
+  height: 90px;
+  background-color:#dce0e6; /* Fondo blanco */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+#nuevo-contenedor-azul {
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+    background-color:#aec5e8; /* Fondo blanco */
+    margin: 0px 0; /* Espacio vertical entre contenedores */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+#nuevo-contenedor-azul-small {
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    background-color:#aec5e8; /* Fondo blanco */
+    margin: 0px 0; /* Espacio vertical entre contenedores */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+
+#texto-centrado {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 50px; /* Tamaño de fuente personalizado (ajusta según tus necesidades) */
+    font-family: "Roboto", sans-serif; /* Fuente personalizada (puedes cambiarla) */
+    color: #000000; /* Color del texto (puedes cambiarlo) */
+}
+
+#enlace-centrado {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 20px; /* Tamaño de fuente personalizado (ajusta según tus necesidades) */
+    font-family: "Roboto", sans-serif; /* Fuente personalizada (puedes cambiarla) */
+    color: #000000; /* Color del texto (puedes cambiarlo) */
+    text-decoration: underline;
+    }
+
+/* Ajusta los estilos del contenido del contenedor horizontal dentro del nuevo contenedor */
+
+
+#logo {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto "cromatica" junto al logo */
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#cromatica {
+    font-family: 'Roboto'; /* Fuente Roboto */
+    font-size: 32px; /* Tamaño de fuente personalizado */
+    margin-left: 10px; /* Espacio entre el logo y el texto "cromatica" */
+}
+
+#menu {
+    flex: 2;
+    text-align: center;
+    margin-top: 10px; /* Espacio entre el logo y los enlaces del menú en pantallas pequeñas */
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: "Century Gothic", sans-serif;
+}
+
+#search-container {
+display: flex;
+align-items: center; /* Centra verticalmente los elementos */
+}
+
+#search-box {
+flex: 1; /* Ocupa todo el espacio disponible */
+margin-right: 10px; /* Espacio de 10px entre la caja de búsqueda y el botón */
+}
+
+#login-container {
+margin-left: 10px; /* Espacio de 10px entre la caja de búsqueda y el botón */
+}
+
+#login-button {
+background-color: #ffffff; /* Color de fondo negro por defecto */
+color: #000000; /* Color del texto blanco por defecto */
+font-family: "Roboto", sans-serif;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 2px 5px #1f1f20; /* Sombreado ligero */
+width: 120px; /* Ancho de 60px */
+height: 40px; /* Alto de 30px */
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s; /* Transición suave al cambiar de color */
+}
+
+#login-button:hover {
+background-color: #dce0e6; /* Color de fondo azul rey al pasar el cursor */
+color: #000000; /* Color del texto blanco al pasar el cursor */
+}
+#search-input {
+width: 250px; /* Ancho de 100px */
+height: 20px; /* Alto de 30px */
+padding: 5px; /* Espacio interno dentro de la caja de búsqueda */
+}
+
+#boton-centrado {
+text-align: center;
+}
+
+#cambiar-color {
+background-color: #000; /* Color de fondo inicial (negro) */
+border: none;
+padding: 15px 30px; /* Ajusta el tamaño del botón según tus necesidades */
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+color: #fff; /* Color del texto inicial (blanco) */
+border-radius: 5px;
+box-shadow: 2px 2px 5px #1f1f20; /* Sombreado ligero */
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s; /* Transición suave al cambiar de color */
+}
+
+/* Estilos para el botón cuando se coloca el cursor sobre él */
+#cambiar-color:hover {
+background-color: #2b4c7e; /* Color de fondo azul rey */
+color: #fff; /* Color del texto (blanco) */
+}
+
+/* Estilos para el contenedor de dos columnas */
+#contenedor-dos-columnas {
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: left;
+margin: 0 200px; /* Espacio de 200px entre ambos extremos */
+height: 500px; /* Altura fija de 500px */
+}
+
+/* Estilos para la columna de la imagen */
+.columna-imagen {
+flex: 1;
+max-width: calc(50% - 10px); /* Aproximadamente la mitad del contenedor principal con espacio de 20px entre columnas */
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 20px; /* Espacio de 20px a los lados de la columna de la imagen */
+}
+
+/* Estilos para el contenedor de la imagen */
+#imagen-contenedor {
+max-width: 100%; /* La imagen se adapta al tamaño del contenedor */
+}
+
+/* Estilos para la imagen */
+#imagen-contenedor img {
+width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+height: auto; /* La altura se ajusta automáticamente */
+}
+
+/* Estilos para la columna del texto */
+.columna-texto {
+flex: 1;
+max-width: calc(50% - 10px); /* Aproximadamente la mitad del contenedor principal con espacio de 20px entre columnas */
+padding: 0 3px; /* Espacio de 20px a los lados de la columna de texto */
+}
+
+/* Estilos para el texto */
+.columna-texto p {
+font-family: "Century Gothic", sans-serif;
+font-size: 18px; /* Tamaño de fuente personalizado */
+
+}
+
+/* Estilos para el contenedor de imagen de fondo */
+#contenedor-imagen-fondo {
+background: url('https://media.admagazine.com/photos/618a6acacc7069ed5077ca7c/3:2/w_2250,h_1500,c_limit/69052.jpg') no-repeat center center;
+background-size: cover;
+height: 200px;
+position: relative;
+}
+
+/* Aplica una transparencia del 50% al fondo */
+#contenedor-imagen-fondo::before {
+content: "";
+background-color: rgba(0, 0, 0, 0.5); /* Cambia el último valor para ajustar la transparencia */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/* Estilos para el contenedor de suscripción */
+#contenedor-suscripcion {
+position: absolute;
+top: 50%; /* Centra verticalmente el contenido */
+left: 50%; /* Centra horizontalmente el contenido */
+transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+display: flex;
+flex-direction: column;
+justify-content: center; /* Centra verticalmente el contenido */
+align-items: center; /* Centra horizontalmente el contenido */
+text-align: center; /* Centra el texto horizontalmente */
+color: #fff;
+}
+
+/* Estilos para el contenido de suscripción */
+#contenido-suscripcion {
+margin-top: 0px; /* Espacio entre el texto y la caja de texto/botón */
+font-size: 30px; /* Tamaño de fuente personalizado de 20px */
+
+}
+
+/* Estilos para la caja de texto */
+#caja-texto {
+width: 300px;
+height: 25px;
+border: none;
+border-radius: 50;
+font-family: "Centuary Gothic", sans-serif;
+margin: 10px 0; /* Espacio entre la caja de texto y el botón */
+padding: 5px;
+font-size: 15px; /* Tamaño de fuente personalizado de 20px */
+
+}
+
+/* Estilos para el botón */
+#boton-ok {
+width: 35px;
+height: 35px;
+background-color: #000;
+font-family: "Roboto", sans-serif;
+border-radius: 5px;
+box-shadow: 2px 2px 5px #1f1f20; /* Sombreado ligero */
+color: #fff;
+border: none;
+cursor: pointer;
+font-size: 15px; /* Tamaño de fuente personalizado de 20px */
+
+}
+
+/* Estilos para el contenedor gris */
+#contenedor-gris {
+background-color: #1f1f20; /* Color gris */
+height: 200px; /* Altura fija de 100px */
+color: #fff; /* Cambia el color del texto a blanco */
+text-align: center;
+padding: 0 100px; /* Espacio de 100px en ambos extremos */
+display: flex;
+flex-direction: column;
+justify-content: center; /* Centramos verticalmente el contenido */
+font-family: "Century Gothic", sans-serif; /* Cambia la fuente a Century Gothic */
+font-size: 20px; /* Tamaño de fuente personalizado de 20px */
+
+}
+
+/* Estilos para el contenedor de redes sociales */
+.redes-sociales {
+display: flex;
+justify-content: space-between; /* Espacio entre las columnas */
+max-width: 100%; /* Ajustar al ancho máximo del contenedor gris */
+}
+
+/* Estilos para las columnas de redes sociales */
+.columna-redes {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: flex-start; /* Alineamos los elementos a la izquierda en cada columna */
+}
+
+/* Estilos para los enlaces de redes sociales */
+.columna-redes a {
+text-decoration: none;
+margin: 5px; /* Espacio entre los íconos de redes sociales */
+color: #fff; /* Cambia el color de los enlaces a blanco */
+transition: color 0.3s; /* Transición suave del color al pasar el cursor */
+}
+
+/* Cambia el color de los enlaces al pasar el cursor */
+.columna-redes a:hover {
+color: #888; /* Cambia el color de los enlaces al pasar el cursor a gris */
+}
+
+/* Estilos para las imágenes de redes sociales */
+.columna-redes img {
+width: 32px; /* Tamaño de las imágenes de redes sociales */
+height: 32px;
+margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+/* Estilos para el pie de página */
+#footer {
+background-color: #000;
+color: #fff;
+padding: 0; /* Eliminamos el padding para ajustar el centrado */
+text-align: center;
+height: 300px; /* Altura fija de 300px */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+/* Estilos para el contenido del pie de página */
+.contenido-footer {
+font-family: "Century Gothic", sans-serif; /* Cambiamos la fuente a Century Gothic */
+font-size: 20px; /* Tamaño de fuente personalizado de 20px */
+}
+
+/* Estilos para el la galeria de ULTIMAS OBRAS */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .gallery-container {
+    width: calc(100% - 100px); /* Resta 100px al ancho total para agregar 50px de espacio en cada lado */
+    margin: 0 50px; /* Agrega un margen de 50px a ambos lados del contenedor */
+    overflow: hidden; /* Asegura que no se desborde el contenido de las imágenes */
+  }
+  
+  .gallery-container h2 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .gallery {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal si las imágenes no caben en la pantalla */
+    padding: 20px 0; /* Agrega un poco de espacio alrededor de las imágenes */
+    overflow-x: scroll; /* Cambia auto por scroll para permitir siempre la barra de desplazamiento */
+    scroll-snap-type: x mandatory; /* Opcional: para que las imágenes se alineen al desplazarse */
+  }
+  
+  .image-container {
+    flex: none; /* Evita que las imágenes se estiren o encojan */
+    width: 200px; /* Ancho fijo de los contenedores de las imágenes */
+    height: 300px; /* Altura fija de los contenedores de las imágenes, cámbiala según necesites */
+    margin-right: 20px; /* Espacio entre imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: Añade una sombra para dar profundidad */
+    transition: transform 0.3s ease-in-out; /* Opcional: Añade una transición para efectos al pasar el mouse */
+    display: flex; /* Asegura que la imagen hijo se pueda centrar horizontal y verticalmente */
+    align-items: center;
+    justify-content: center;
+    background-size: cover; /* Asegura que la imagen cubra completamente el área del contenedor */
+    overflow: hidden; /* Previene cualquier desbordamiento de la imagen fuera del contenedor */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor, recortando si es necesario */
+  }
+  
+  .image-container:hover {
+    transform: scale(1.10); /* Opcional: Efecto de zoom al pasar el mouse */
+  }
+
+  /* Estilos de la tabla de galerias las RECCIENTES galerias */ 
+  .gallery2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    grid-template-rows: 1fr 1fr; /* 2 filas */
+    grid-gap: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    max-height: 400px; /* Altura máxima del contenedor */
+    margin: auto; /* Centra la galería */
+    aspect-ratio: 1 / 1; /* Mantiene la relación de aspecto */
+  }
+  .photo {
+    position: relative;
+    overflow: hidden;
+    background-color: #ccc; /* Color de fondo para visualizar el área si no hay imagen */
+  }
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que las imágenes cubran completamente las celdas sin deformarse */
+  }
+  .photo span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    color: white;
+    text-align: center;
+    font-family: 'Century Gothic', sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ease;
+  }
+  .photo:hover span {
+    visibility: visible;
+    opacity: 1;
+  }
+  .big-cell {
+    grid-row: 1 / span 2; /* Esta celda abarca 2 filas */
+  }
+
+  /* Responsividad */
+  @media (max-width: 500px) {
+    .gallery2 {
+      max-width: 90vw;
+      max-height: 90vw;
+      grid-template-columns: 1fr; /* 1 columna */
+    }
+    .big-cell {
+      grid-row: 2; /* La celda grande se mueve a la segunda fila sola */
+    }
+  }
+  /* CONTENEDOR DE ESCOGE TU ESTILOS */
+  
+.container {
+    padding: 0 50px; /* Espacio de 50px a los costados */
+    width: 70%;
+    max-width: 1200px; /* Ajusta este valor para cambiar el tamaño máximo del grid */
+    box-sizing: border-box;
+    
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 10px;
+  }
+  .grid-item {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    overflow: hidden;
+  }
+  .grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .grid-item:hover img {
+    transform: scale(1.1);
+  }
+  .text-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  /* Ajustar para los elementos que abarcan 2 filas */
+  .grid-item.span-2 {
+    grid-row: span 2 / auto;
+    padding-top: 200%; /* Doble del tamaño para mantener la proporción */
+  }
+
+  /* GALERIA DE AGREGADOS RECIENTES */
+
+  .gallery-container-recientes {
+    width: calc(100% - 100px); /* Se restan 100px al total para el margen */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    overflow: hidden; /* Previene el desbordamiento */
+    padding: 50px 0; /* Agrega algo de espacio vertical */
+    font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif; /* Pila de fuentes actualizada */
+  }
+  
+  .gallery-container-recientes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-recientes {
+    display: flex;
+    overflow-x: scroll; /* Asegura que la barra de desplazamiento siempre esté visible */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 0 50px; /* Agrega espacio horizontal dentro del contenedor */
+  }
+  
+  .card-recientes {
+    flex: none;
+    width: 20vw; /* Ajusta el ancho basado en el ancho de la ventana */
+    height: 370px; /* Ajusta el ancho basado en el ancho de la ventana */
+    margin-right: 20px; /* Espacio entre tarjetas */
+    background: #fff; /* Fondo blanco para las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin-bottom: 20px; /* Espacio debajo de cada tarjeta */
+    display: flex;
+    flex-direction: column; /* Organiza los hijos de la tarjeta en una columna */
+  }
+  
+  .card-img-recientes {
+    width: 100%; /* La imagen cubre el ancho de la tarjeta */
+    height: 240px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+  }
+
+  .card-recientes:hover {
+    transform: scale(1.02); /* Opcional: Efecto de zoom al pasar el mouse */
+    box-shadow: 0 4px 8px #000000 /* Sombra para dar profundidad */
+
+  }
+  
+  .card-body-recientes {
+    padding: 20px; /* Espacio dentro del cuerpo de la tarjeta */
+    flex: 1; /* Asegura que el cuerpo de la tarjeta se expanda para llenar el espacio */
+  }
+  
+  .card-title-recientes {
+    margin: 0 0 10px 0; /* Espacio debajo del título */
+    font-size: 1rem; /* Tamaño del título */
+  }
+  
+  .card-text-recientes {
+    font-size: 0.8rem; /* Tamaño del texto */
+    margin-bottom: 5px; /* Espacio debajo del texto */
+    color: #333; /* Color del texto */
+  }
+  
+  .card-buttons-recientes {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    padding: 5px 5px; /* Relleno dentro del área de botones */
+  }
+  
+  .card-buttons-recientes button {
+    padding: 10px 15px; /* Relleno dentro de los botones */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+  }
+  
+  .card-buttons-recientes button:hover {
+    background-color: #ddd; /* Color al pasar el mouse sobre el botón */
+  }
+
+  /* Estilos para la barra de desplazamiento */
+.gallery-recientes::-webkit-scrollbar {
+  height: 12px; /* Altura de la barra de desplazamiento */
+  background-color: #DCE0E6; /* Color de fondo de la barra de desplazamiento */
+}
+
+.gallery-recientes::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Color de la barra de desplazamiento (blanco) */
+  border-radius: 6px; /* Bordes redondeados para la barra */
+}
+
+
+/* Para otros navegadores que soportan la personalización de la barra de desplazamiento con CSS */
+.gallery-recientes {
+  scrollbar-color: #ffffff #dce0e6; /* color de la barra y color de fondo */
+  scrollbar-width: thin; /* Podría ser 'auto' o 'thin' */
+}
+  
+  /* Media query para pantallas menores de 600px */
+  @media (max-width: 600px) {
+    .gallery-container-recientes {
+      width: 100%; /* Ajusta el ancho al 100% para pantallas pequeñas */
+      padding: 50px 0; /* Mantiene el espacio vertical */
+    }
+  
+    .gallery-recientes {
+      padding: 0 20px; /* Reduce el espacio horizontal */
+    }
+  
+    .card-recientes {
+      width: 80vw; /* Aumenta el ancho de la tarjeta para pantallas más pequeñas */
+      margin-right: 10px; /* Reduce el espacio entre tarjetas */
+    }
+  }
+
+  /* APARTADO CONOCE AL ARTISTA */
+
+  .card-recientes-artista {
+    flex: none;
+    width: 20vw; /* Ajusta el ancho basado en el ancho de la ventana */
+    height: 370px; /* Ajusta el ancho basado en el ancho de la ventana */
+    margin-right: 20px; /* Espacio entre tarjetas */
+       margin-bottom: 20px; /* Espacio debajo de cada tarjeta */
+    display: flex;
+    flex-direction: column; /* Organiza los hijos de la tarjeta en una columna */
+  }
+  
+  
+  .card-img-recientes-artista {
+    width: 100%; /* La imagen cubre el ancho de la tarjeta */
+    height: 300px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+  }
+
+  .card-recientes-artista:hover {
+    transform: scale(1.02); /* Opcional: Efecto de zoom al pasar el mouse */
+    box-shadow: 0 4px 8px #000000 /* Sombra para dar profundidad */
+
+  }
+  
+  .card-body-recientes-artista {
+    padding: 5px; /* Espacio dentro del cuerpo de la tarjeta */
+    flex: 1; /* Asegura que el cuerpo de la tarjeta se expanda para llenar el espacio */
+  }
+  
+  .card-title-recientes-artista {
+    text-align: center;
+    margin: 0 0 10px 0; /* Espacio debajo del título */
+    font-size: 1rem; /* Tamaño del título */
+  }
+
+  .card-text-recientes-artista {
+    font-size: 0.8rem; /* Tamaño del texto */
+    text-align: center;
+    margin: 0 0 5px 0; /* Espacio debajo del título */
+    color: #333; /* Color del texto */
+  }
+
+   /*PAGINA DE TENDENCIAS*/
+#textoplano-izquierdo {
+  font-size: 0.9 rem;
+    font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif; /* Pila de fuentes actualizada */
+    color: #000000; /* Cambia el color del texto a tu gusto */
+    padding: 10px;
+    line-height: 20px; /* Ajusta este valor según tus necesidades */
+}
+
+#contenedor-gris-small-bordes {
+  width: 100%;
+  max-width: calc(100% - 200px); /* Ancho máximo con espacios de 100px en ambos extremos */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  display: flex;
+  justify-content: space-between; /* Espacio entre los extremos */
+  height: 30px;
+  background-color:#F6F3EC; /* Fondo blanco */
+  display: flex;
+  padding: 10px;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+#contenedor-blanco-small-bordes {
+  width: 100%;
+  max-width: calc(100% - 180px); /* Ancho máximo con espacios de 100px en ambos extremos */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  display: flex;
+  justify-content: space-between; /* Espacio entre los extremos */
+  height: 30px;
+  background-color:#ffffff; /* Fondo blanco */
+  display: flex;
+  padding: 0px;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+#contenedor-gris-big-bordes {
+  width: 100%;
+  max-width: calc(100% - 200px); /* Ancho máximo con espacios de 100px en ambos extremos */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  display: flex;
+  justify-content: space-between; /* Espacio entre los extremos */
+  height: 100px;
+  background-color:#F6F3EC; /* Fondo blanco */
+  display: flex;
+  padding: 10px;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+#contenedor-sinfondo {
+  width: 100%;
+  max-width: calc(100% - 100px); /* Ancho máximo con espacios de 100px en ambos extremos */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  display: flex;
+  justify-content: space-between; /* Espacio entre los extremos */
+  height: 30px;
+  background-color:#ffffff; /* Fondo blanco */
+  display: flex;
+  padding: 10px;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+   /*contenedores de las imagenes*/
+
+.popup-tendencia {
+  display: none; /* Se oculta hasta que se hace clic en una imagen */
+  position: fixed;
+  z-index: 1000; /* Asegura que la modal esté sobre otros elementos */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9); /* Fondo negro semitransparente */
+  
+}
+
+/* Estilo para la imagen dentro de la ventana modal */
+.popup-content-tendencia {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 500px; /* O el máximo que desees */
+  display: flex; /* Establece el contenedor como una caja flexible */
+
+}
+
+/* Estilo para el botón de cerrar */
+.close-tendencia {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container-tendencia {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 100px; /* Espacio a la izquierda */
+  margin-right: 100px; /* Espacio a la derecha */
+}
+
+.art-card-tendencia {
+  width: calc(25% - 20px); /* Ajusta esta línea según la cantidad de tarjetas que quieras por fila */
+  margin: 10px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el contorno */ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea los elementos hijos a la derecha */
+  padding-bottom: 10px;
+
+}
+
+.art-card-tendencia:hover {
+  transform: scale(1.02); /* Opcional: Efecto de zoom al pasar el mouse */
+
+}
+
+.art-image-tendencia {
+  width: 100%;
+  max-height: 500px; /* Establece el tamaño máximo de la imagen */
+  object-fit: cover; /* Controla cómo se ajusta la imagen dentro del contenedor */
+  display: block; /* Para evitar el espacio extra debajo de la imagen */
+  margin-bottom: 10px; /* Espacio entre la imagen y la información */
+}
+
+.art-info-tendencia p {
+  margin: 2px 0;
+  text-align: right; /* Alinea el texto a la derecha */
+  font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif; /* Pila de fuentes actualizada */
+}
+
+/* lienas divisoreas de estilos de arte */
+
+.custom-container-linea {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #DCE0E6; /* Línea recta debajo del contenedor */
+  max-width: calc(100% - 100px); /* Ancho máximo con espacios de 100px en ambos extremos */    margin: auto;
+  font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif; /* Pila de fuentes actualizada */
+  }
+
+.avatar-linea {
+  width: 50px; /* Ajusta según sea necesario */
+  height: 50px; /* Ajusta según sea necesario */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  background-color: #eee; /* Color de fondo para la zona del avatar en caso de que no se cargue la imagen */
+}
+
+.avatar-linea img {
+  width: 100%;
+  height: auto;
+  display: block; /* Elimina espacio adicional debajo de la imagen */
+}
+
+.name-linea {
+  font-size: 20px; /* Ajusta según sea necesario */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  /* Para pantallas menores o iguales a 768px de ancho, como tabletas y móviles */
+  .custom-container-linea {
+    flex-direction: column; /* Alinea verticalmente para pantallas pequeñas */
+    align-items: flex-start;
+  }
+
+  .avatar-linea {
+    margin-bottom: 10px; /* Espacio entre el avatar y el nombre en pantallas pequeñas */
+  }
+
+  .name-linea {
+    font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+}
+/* ARTISTA INDIVIDUAL */
+.container-artista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif; /* Pila de fuentes actualizada */
+
+}
+
+.header-artista {
+  display: flex;
+  justify-content:left;
+  width: 100%;
+  max-width: calc(100% - 100px); /* Ancho máximo con espacios de 100px en ambos extremos */
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.profile-artista {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; /* Asegura que la imagen sea un círculo */
+  object-fit: cover; /* Ajusta la imagen dentro del círculo */
+  
+}
+
+
+.profile-info-artista h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content-artista {
+  display: flex;
+  width: 100%;
+  max-width: calc(100% - 100px); /* Ancho máximo con espacios de 100px en ambos extremos */
+  background-color: #ffffff;
+}
+
+.bio-artista {
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex: 1;
+  background-color: #ffffff;
+}
+ 
+.artwork-artista img {
+  width: 100%; /* Asegura responsividad */
+  max-width: 350px; /* Tamaño fijo máximo */
+  height: auto; /* Mantiene la proporción de la imagen */
+  transform: scale(1.02); /* Opcional: Efecto de zoom al pasar el mouse */
+}
+
+.artwork-artista:hover {
+  transform: scale(1.05); /* Opcional: Efecto de zoom al pasar el mouse */
+}
+
+.sidebar-artista{
+padding-top: 0;
+padding-left: 15px;
+padding-right: 15px;
+background-color: #DCE0E6;
+}
+
+.sidebar-artista:hover {
+  transform: scale(1.05); /* Opcional: Efecto de zoom al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Opcional: Añade una sombra para dar profundidad */
+
+}
+
+.image-container-artista {
+  flex: none; /* Evita que las imágenes se estiren o encojan */
+  width: 200px; /* Ancho fijo de los contenedores de las imágenes */
+  height: 200px; /* Altura fija de los contenedores de las imágenes, cámbiala según necesites */
+  margin-right: 30px; /* Espacio entre imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: Añade una sombra para dar profundidad */
+  transition: transform 0.3s ease-in-out; /* Opcional: Añade una transición para efectos al pasar el mouse */
+  display: flex; /* Asegura que la imagen hijo se pueda centrar horizontal y verticalmente */
+  align-items: center;
+  justify-content: center;
+  background-size: cover; /* Asegura que la imagen cubra completamente el área del contenedor */
+  overflow: hidden; /* Previene cualquier desbordamiento de la imagen fuera del contenedor */
+}
+
+.image-container-artista img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor, recortando si es necesario */
+}
+
+.image-container-artista:hover {
+  transform: scale(1.10); /* Opcional: Efecto de zoom al pasar el mouse */
+}
+
+.hidden-element {
+  display: none;
+  margin-top: 20px;
+}
+
+
+.dropdown {
+  padding-left: 150;
+  padding-right: 150;
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  background-color: #000000;
+  
+}
+.dropdown-content {
+  color: #ffffff;
+  display: none;
+  position: absolute;
+  width: 70;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  background-color: #000000;
+}
+.dropdown:hover .dropdown-content {
+  color: #ffffff;
+  display: block;
+  background-color: #000000;
+}
+.dropdown-content a {
+  display: block;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+  background-color: #000000;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+

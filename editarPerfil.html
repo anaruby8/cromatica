@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Artistas</title>
+
+    <link rel="icon" type="image/png" href="logopng.png"> <!-- Reemplaza 'ruta/imagen.png' con la ruta a tu ícono -->
+    <!-- Resto de las etiquetas meta y estilo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesEditarPerfil.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <style>   
+    </style>
+
+</head>
+<body>
+<!-- header -->   
+    <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 100;">
+        <div id="logo">
+            <a id="enlace-derecho" href="home.html"><img src="logo.jpeg" alt="Logo"></a>
+            <span id="cromatica" href="home.html">Cromática</span>
+        </div>
+        <div id="menu">
+            <a href="#">Agenda</a>
+            <a href="obras.html">Obras</a>
+            <a href="artista.html">Artistas</a>
+        </div>
+        <div id="search-container">
+            <div id="search-box">
+                <input type="text" id="search-input" placeholder="Buscar artista/obra...">
+            </div>
+            <!--
+            <div id="login-container">
+                <button id="login-button">Iniciar sesión</button>
+            </div>
+        </div>  -->   
+    </header>
+<!-- header -->   
+
+<!-- cuerpo --> 
+    <div id="contenedor-espacio-small"></div> <!-- Contenedor de espacio -->
+    <div id="contenedor-espacio"></div>
+    <div id="contenedor-espacio"></div>
+
+    <div id="contenedor-horizontal">
+            <div id="texto-izquierdo">MI CUENTA</div>
+    </div>
+
+<!-- formulario --> 
+    <div class="contenedor">
+        <h2>Editar Perfil</h2>
+        <form action="Modificar.php" method="post">
+
+            <div class="formulario-grupo">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+    
+            <div class="formulario-grupo">
+                <label for="apellidos">Apellidos *</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+    
+            <div class="formulario-grupo">
+                <label for="nombre-visible">Nombre visible *</label>
+                <input type="text" id="nombre-visible" name="nombre-visible" required>
+            </div>
+            
+            <div class="formulario-grupo">
+                <label for="correo">Dirección de correo electrónico Anterior*</label>
+                <input type="email" id="correo" name="correoAnterior" required>
+            </div>
+
+            <div class="formulario-grupo">
+                <label for="correo">Dirección de correo electrónico Nuevo *</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <!-- Línea divisoria -->
+            <hr>
+                <div class="seccion">
+                    <h3>Cambio de contraseña</h3>
+                    <div class="formulario-grupo">
+                        <label for="contrasena-actual">Contraseña actual (déjalo en blanco para no cambiarla)</label>
+                        <input type="password" id="contrasena-actual">
+                    </div>
+        
+                    <div class="formulario-grupo">
+                        <label for="nueva-contrasena">Nueva contraseña (déjalo en blanco para no cambiarla)</label>
+                        <input type="password" id="nueva-contrasena" name="nueva-contrasena">
+                    </div>
+        
+                    <div class="formulario-grupo">
+                        <label for="confirmar-contrasena">Confirmar nueva contraseña (déjalo en blanco para no cambiarla)</label>
+                        <input type="password" id="confirmar-contrasena">
+                    </div>
+                </div>
+        
+                <input type="submit" class="boton">
+                <div id="mensajeError" style="color: red;"></div>        
+            </form>
+    </div>
+    <!-- La ventana modal -->
+    <!--
+    <div id="modalConfirmacion" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Tus cambios han sido guardados con éxito.</p>
+        </div>
+      
+      </div>-->  
+    
+<!-- cuerpo -->         
+
+<!-- PIE DE PAGINA -->   
+    <div id="contenedor-imagen-fondo">
+        <div id="contenedor-suscripcion">
+            <div id="imagen-contenedor">
+                <!-- Imagen de fondo -->
+            </div>
+            <div id="contenido-suscripcion">
+                <p>Suscríbete al boletín semanal</p>
+                <input type="text" id="caja-texto" placeholder=" email">
+                <button id="boton-ok">OK</button>
+                
+            </div>
+        </div>
+    </div>
+    <div id="contenedor-gris">
+        <div class="redes-sociales">
+            <div class="columna-redes">
+                <a href="#"><img src="https://assets.stickpng.com/images/60fea6773d624000048712b5.png" alt="Facebook">  /Facebook</a>
+                <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/016/716/486/original/twitter-icon-free-png.png" alt="Twitter">  /Twitter</a>
+            </div>
+            <div class="columna-redes">
+                <a href="#"><img src="https://i.pinimg.com/originals/3b/21/c7/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="Instagram">   /Intagram</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> /LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="contenido-footer">
+            <p>© 2023 Cromatica. Todos los derechos reservados.</p>
+            <p>123 Calle Principal, Ciudad, País</p>
+            <p>Teléfono: (123) 456-7890 | Correo electrónico: info@cromatica.com</p>
+        </div>
+    </div>
+<!-- PIE DE PAGINA -->       
+    
+<script src="scriptEditarPerfil.js"></script>
+</body>
+</html>

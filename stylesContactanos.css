@@ -1,0 +1,62 @@
+.contenedor_formulario {
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;   
+  width: calc(100% - 400px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Century Gothic', sans-serif; /* Cambia la fuente a Century Gothic */
+
+  }
+  
+  form {
+    background-color: #fff;
+    font-family: 'Century Gothic', sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    
+  }
+  
+  form input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+  }
+  
+  form button {
+    background-color: #2B4C7E;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Century Gothic', sans-serif;
+  }
+  
+  button.cancel {
+    background-color: #ccc;
+  }
+  
+  button.clear {
+    background-color: #606D80;
+  }
+  
+  .error {
+    border: 1px solid #f44336;
+  }
+  

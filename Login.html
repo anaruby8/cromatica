@@ -1,0 +1,42 @@
+<link rel="icon" type="image/png" href="logopng.png"> <!-- Reemplaza 'ruta/imagen.png' con la ruta a tu ícono -->
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Login_css.css">
+<div class="main">
+    
+    
+    <div class="container">
+<center>
+<div class="middle">
+      <div id="login">
+
+        <form action="validar.php" method="post">
+          <fieldset class="clearfix">
+            <p ><span class="fa fa-user"></span><input type="text"  Placeholder="Correo" name="Correo" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+            <p><span class="fa fa-lock"></span><input type="password"  Placeholder="Password" name="contraseña" required></p> <!-- JS because of IE support; better: placeholder="Password" -->            
+            <div>
+              <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="Resgistro.html">No tienes cuenta?Registrate</a></span>
+              <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In" onclick="mostrar(); ocultar();"></span>
+            </div>
+          </fieldset>
+<div class="clearfix"></div>
+        </form>
+
+        <div class="clearfix"></div>
+
+      </div> <!-- end login -->
+      <div class="logo">
+        <img src="RSC/Cromatica-removebg-preview.png" alt="Descripción de la imagen" width="474" height="131">
+
+          
+          <div class="clearfix"></div>
+      </div>
+      
+      </div>
+</center>
+    </div>
+
+</div>
+
+<!-- Importar los scripts -->
+<script src="script.js"></script>
+<script src="dialogo.js"></script>
