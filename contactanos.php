@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <title>Contactanos</title>
+    <link rel="stylesheet" href="stylesContactanos.css">
 
     <?php require('./Layouts/header.php')?>
 <!-- header -->   
@@ -22,10 +23,10 @@
 
 <!-- formulario -->
     <div id="contenedor_formulario">
-    <form id="formulario" onsubmit="enviarDatos(); return false;">
+    <form id="formulario" action="procesar_formulario.php" metod="post" enctype="multipart/form-data">
         <!-- <form id="formulario" onsubmit="enviarDatos(); return false;"> -->
         <label for="nombre">Nombre*</label>
-        <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
     
         <label for="apellidos">Apellidos*</label>
         <input type="text" id="apellidos" placeholder="Ingrese sus apellidos" required>
@@ -43,25 +44,25 @@
         <input type="tel" id="telefono" placeholder="Ingrese su número teléfonico" required>
     
         <label for="obra">Nombre de la Obra*</label>
-        <input type="text" id="obra" placeholder="Ingrese el nombre de la obra" required>
+        <input type="text" id="obra" placeholder="Ingrese el nombre de la obra" name="obra" required>
     
         <label for="medidas">Medidas*</label>
         <input type="text" id="medidas" placeholder="Ingrese en formato de centímetros o pixeles (100cm x 200cm o 200px x 300px)" required>
     
         <label for="formato">Estilo*</label>
-        <select id="formato" required>
-          <option value="opcion1">Dígital</option>
-          <option value="opcion2">Físico</option>
+        <select id="formato" name="formato" required>
+          <option value="digital">Dígital</option>
+          <option value="fisico">Físico</option>
         </select>
 
         <label for="detalles">Detalles*</label>
         <input type="textarea" id="detalles" rows="4" cols="50" placeholder="Dinos más sobre tu obra" required>
     
         <label for="fotografias">Subir Fotografías (mínimo 1, máximo 4)</label>
-        <input type="file" id="fotografias" accept="image/*" multiple required>
+        <input type="file" id="file" name="file" accept="image/*" required>
     
         <button type="submit">Enviar</button>
-        <a href="home.html"><button type="button" class="cancel" onclick="cancelarEnvio()">Cancelar</button></a>
+        <a href="home.php"><button type="button" class="cancel" onclick="cancelarEnvio()">Cancelar</button></a>
         <button type="button" class="clear" onclick="limpiarFormulario()">Limpiar</button>
       </form>
     </div>

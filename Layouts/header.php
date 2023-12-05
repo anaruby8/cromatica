@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stylesContactanos.css">
-    <link rel="stylesheet" href="stylesAgenda.css"> <!-- Enlace al archivo CSS externo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap" rel="stylesheet">

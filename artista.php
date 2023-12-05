@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <title>Artistas</title>
-    
+        <link rel="stylesheet" href="styles.css">
+
     <?php require('./Layouts/header.php')?>
     
 <!-- header -->   
@@ -20,40 +21,51 @@
     <div id="contenedor-gris-small-bordes">
         <div id="textoplano-izquierdo">Te invitamos a descubrir las historias y la inspiración detrás de cada obra maestra, conectando así con la pasión y la visión que impulsa a cada creador.</div>
     </div>
+    
     <div id="contenedor-espacio"></div>
 
     <div class="container-tendencia">
         <div class="art-card-tendencia">
-          <a href="artista_bio.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoZREmEuLolcBGvVhU17p5MOS8TypQEUYuXafMzC_rnyg9eb0Etsb2fCX_eVuNboQYpT4&usqp=CAU" alt="Artwork" class="art-image-tendencia"></a>
+          <img src="1.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
           <div class="art-info-tendencia">
-            <p>Luc Villard</p>
-            <p><strong><em>(1955-Actualidad)</em></strong></p>
-            <p></p>
-            <p><strong></strong></p>
+            <p>Elena Vásquez</p>
+            <p><strong><em>Armonía Flotante</em></strong></p>
+            <p>Óleo sobre lienzo</p>
+            <p>100cm x 80cm</p>
+            <p><strong>Museo de Vanguardia</strong></p>
           </div>
         </div>
         <!-- Repetir el div de art-card para cada obra de arte -->
         <div class="art-card-tendencia">
-          <a href="artista_bio.html"><img src="https://konfio-blog.s3.us-west-2.amazonaws.com/wp-content/uploads/2019/05/02113926/la-vida-de-leonardo-da-vinci-y-su-lado-emprendedor.jpg" alt="Artwork" class="art-image-tendencia"></a>
-            <div class="art-info-tendencia">
-              <p>Leonardo Da Vinci</p>
-              <p><strong><em>(1452-1519)</em></strong></p>
+          <img src="3.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+          <div class="art-info-tendencia">
+              <p>Marco Antonio Solís</p>
+              <p><strong><em>Pensamientos Fragmentados</em></strong></p>
+              <p>Acrílico sobre madera</p>
+              <p>120cm x 90cm</p>
+              <p><strong>Museo del Muralismo Mexicano</strong></p>
             </div>
           </div>
           <!-- Repetir el div de art-card para cada obra de arte -->
           <div class="art-card-tendencia">
-            <a href="artista_bio.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Roy_Lichtenstein.jpg/800px-Roy_Lichtenstein.jpg" alt="Artwork" class="art-image-tendencia"></a>
+            <img src="5.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
             <div class="art-info-tendencia">
-              <p>Roy Fox Lichtenstein</p>
-              <p><strong><em>(1923-1997)</em></strong></p>
+              <p>Isabella Rivera</p>
+              <p><strong><em>Puerta al Pasado</em></strong></p>
+              <p>Técnica mixta en papel</p>
+              <p>70cm x 50cm</p>
+              <p><strong>Museo de Vanguardia</strong></p>
             </div>
           </div>
           <!-- Repetir el div de art-card para cada obra de arte -->
           <div class="art-card-tendencia">
-            <a href="artista_bio.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Andy_Warhol_at_the_Jewish_Museum_%28by_Bernard_Gotfryd%29_–_LOC.jpg/640px-Andy_Warhol_at_the_Jewish_Museum_%28by_Bernard_Gotfryd%29_–_LOC.jpg" alt="Artwork" class="art-image-tendencia"></a>
+            <img src="4.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
             <div class="art-info-tendencia">
-              <p>Andy Warhol</p>
-              <p><strong><em>(1928-1987)</em></strong></p>
+              <p>Carlos Jiménez</p>
+              <p><strong><em>Contrastes Urbanos</em></strong></p>
+              <p>Carboncillo sobre cartulina</p>
+              <p>150cm x 100cm</p>
+              <p><strong>Museo de Vanguardia</strong></p>
             </div>
           </div>
           <!-- Repetir el div de art-card para cada obra de arte -->

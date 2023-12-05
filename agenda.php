@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <title>Agenda</title>
-
+    <link rel="stylesheet" href="stylesAgenda.css"> <!-- Enlace al archivo CSS externo -->
     <?php require('./Layouts/header.php')?>
 <!-- header -->   
 

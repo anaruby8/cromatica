@@ -6,114 +6,123 @@
 <!-- header -->   
 
 <!-- cuerpo --> 
+
 <div id="contenedor-espacio-small"></div> <!-- Contenedor de espacio -->
-    <div id="contenedor-espacio"></div>
-    <div id="contenedor-espacio"></div>
+<div id="contenedor-espacio"></div>
+<div id="contenedor-espacio"></div>
 
-    <div id="contenedor-horizontal">
-            <div id="texto-izquierdo">Obras de la Galeria</div>
+<div id="contenedor-horizontal">
+        <div id="texto-izquierdo">Obras de la Galeria</div>
+</div>
+<div id="contenedor-espacio-small"></div> <!-- Contenedor de espacio -->
+
+<div id="contenedor-gris-small-bordes">
+    <div id="textoplano-izquierdo">Cada obra es más que un simple objeto; es un testimonio del ingenio y la pasión que define a nuestros artistas. Sumérgete en este espacio digital donde las imágenes trascienden las palabras, y cada obra es una invitación a la contemplación y la conexión emocional</div>
+</div>
+<div id="contenedor-espacio"></div>
+
+<div class="container-tendencia">
+    <div class="art-card-tendencia">
+      <img src="1.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+      <div class="art-info-tendencia">
+        <p>Elena Vásquez</p>
+        <p><strong><em>Armonía Flotante</em></strong></p>
+        <p>Óleo sobre lienzo</p>
+        <p>100cm x 80cm</p>
+        <p><strong>Museo de Vanguardia</strong></p>
+      </div>
     </div>
-    <div id="contenedor-espacio-small"></div> <!-- Contenedor de espacio -->
-
-    <div id="contenedor-gris-small-bordes">
-        <div id="textoplano-izquierdo">Cada obra es más que un simple objeto; es un testimonio del ingenio y la pasión que define a nuestros artistas. Sumérgete en este espacio digital donde las imágenes trascienden las palabras, y cada obra es una invitación a la contemplación y la conexión emocional</div>
-    </div>
-    <div id="contenedor-espacio"></div>
-
-    <div class="container-tendencia">
-        <div class="art-card-tendencia">
-          <img src="https://image.lexica.art/full_webp/20b18d8b-9ed4-4a03-9941-bc1f81cd2cb2" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
-          <div class="art-info-tendencia">
-            <p>Nombre Autor</p>
-            <p><strong><em>Nombre de la Obra</em></strong></p>
-            <p>Material - Medidas</p>
-            <p><strong>Exhibición</strong></p>
-          </div>
+    <!-- Repetir el div de art-card para cada obra de arte -->
+    <div class="art-card-tendencia">
+      <img src="3.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+      <div class="art-info-tendencia">
+          <p>Marco Antonio Solís</p>
+          <p><strong><em>Pensamientos Fragmentados</em></strong></p>
+          <p>Acrílico sobre madera</p>
+          <p>120cm x 90cm</p>
+          <p><strong>Museo del Muralismo Mexicano</strong></p>
         </div>
-        <!-- Repetir el div de art-card para cada obra de arte -->
-        <div class="art-card-tendencia">
-          <img src="https://image.lexica.art/full_webp/9b848ec1-dd5b-44fd-8141-33e34f4eccb0" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
-          <div class="art-info-tendencia">
-              <p>Nombre Autor</p>
-              <p><strong><em>Nombre de la Obra</em></strong></p>
-              <p>Material - Medidas</p>
-              <p><strong>Exhibición</strong></p>
-            </div>
-          </div>
-          <!-- Repetir el div de art-card para cada obra de arte -->
-          <div class="art-card-tendencia">
-            <img src="quien3.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
-            <div class="art-info-tendencia">
-              <p>Nombre Autor</p>
-              <p><strong><em>Nombre de la Obra</em></strong></p>
-              <p>Material - Medidas</p>
-              <p><strong>Exhibición</strong></p>
-            </div>
-          </div>
-          <!-- Repetir el div de art-card para cada obra de arte -->
-          <div class="art-card-tendencia">
-            <img src="https://image.lexica.art/full_webp/2fae10cf-0148-4aa5-844d-815fce2f8d7f" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
-            <div class="art-info-tendencia">
-              <p>Nombre Autor</p>
-              <p><strong><em>Nombre de la Obra</em></strong></p>
-              <p>Material - Medidas</p>
-              <p><strong>Exhibición</strong></p>
-            </div>
-          </div>
-          <!-- Repetir el div de art-card para cada obra de arte -->
-    </div>
-    <div id="contenedor-espacio-small"></div> <!-- Contenedor de espacio -->
-
-    <div class="container-tendencia">
-        <div class="art-card-tendencia">
-          <img src="https://image.lexica.art/full_webp/8047bbd9-a18e-4bde-9abc-15b89dc54fdc" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
-          <div class="art-info-tendencia">
-            <p>Nombre Autor</p>
-            <p><strong><em>Nombre de la Obra</em></strong></p>
-            <p>Material - Medidas</p>
-            <p><strong>Exhibición</strong></p>
-          </div>
+      </div>
+      <!-- Repetir el div de art-card para cada obra de arte -->
+      <div class="art-card-tendencia">
+        <img src="5.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+        <div class="art-info-tendencia">
+          <p>Isabella Rivera</p>
+          <p><strong><em>Puerta al Pasado</em></strong></p>
+          <p>Técnica mixta en papel</p>
+          <p>70cm x 50cm</p>
+          <p><strong>Museo de Vanguardia</strong></p>
         </div>
-        <!-- Repetir el div de art-card para cada obra de arte -->
-        <div class="art-card-tendencia">
-            <img src="https://image.lexica.art/full_webp/c50811e7-5579-442d-98ae-c38967391e65" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
-            <div class="art-info-tendencia">
-              <p>Nombre Autor</p>
-              <p><strong><em>Nombre de la Obra</em></strong></p>
-              <p>Material - Medidas</p>
-              <p><strong>Exhibición</strong></p>
-            </div>
-          </div>
-          <!-- Repetir el div de art-card para cada obra de arte -->
-          <div class="art-card-tendencia">
-            <img src="https://image.lexica.art/full_webp/94f73928-90a7-485f-9bd7-ebe3a9b17fe0" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
-            <div class="art-info-tendencia">
-              <p>Nombre Autor</p>
-              <p><strong><em>Nombre de la Obra</em></strong></p>
-              <p>Material - Medidas</p>
-              <p><strong>Exhibición</strong></p>
-            </div>
-          </div>
-          <!-- Repetir el div de art-card para cada obra de arte -->
-          <div class="art-card-tendencia">
-            <img src="https://image.lexica.art/full_webp/2fae10cf-0148-4aa5-844d-815fce2f8d7f" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
-            <div class="art-info-tendencia">
-              <p>Nombre Autor</p>
-              <p><strong><em>Nombre de la Obra</em></strong></p>
-              <p>Material - Medidas</p>
-              <p><strong>Exhibición</strong></p>
-            </div>
-          </div>
-          <!-- Repetir el div de art-card para cada obra de arte -->
-    </div>
-    <div id="contenedor-espacio"></div> <!-- Contenedor de espacio -->
+      </div>
+      <!-- Repetir el div de art-card para cada obra de arte -->
+      <div class="art-card-tendencia">
+        <img src="4.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+        <div class="art-info-tendencia">
+          <p>Carlos Jiménez</p>
+          <p><strong><em>Contrastes Urbanos</em></strong></p>
+          <p>Carboncillo sobre cartulina</p>
+          <p>150cm x 100cm</p>
+          <p><strong>Museo de Vanguardia</strong></p>
+        </div>
+      </div>
+      <!-- Repetir el div de art-card para cada obra de arte -->
+</div>
+<div id="contenedor-espacio-small"></div> <!-- Contenedor de espacio -->
 
-    <!-- Ventana emergente para la imagen en grande -->
-    <div id="popup" class="popup-tendencia">
-        <span class="close-tendencia" onclick="closeModal()">&times;</span>
-        <img class="popup-content-tendencia" id="expandedImg">
+<div class="container-tendencia">
+    <div class="art-card-tendencia">
+      <img src="RSC/A cute white with brown spots cat eating ramen (1).jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+      <div class="art-info-tendencia">
+        <p>Ana María González</p>
+        <p><strong><em>Serenidad Felina</em></strong></p>
+        <p>Óleo sobre lienzo</p>
+        <p>60cm x 60cm</p>
+        <p><strong>Museo del Muralismo Mexicano</strong></p>
+      </div>
     </div>
-<!-- cuerpo -->          
+    <!-- Repetir el div de art-card para cada obra de arte -->
+    <div class="art-card-tendencia">
+        <img src="RSC/A tan skin mayan queen all blue and gold elaborate (1).jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+        <div class="art-info-tendencia">
+          <p>Felipe Herrera</p>
+          <p><strong><em>Espíritu de la Selva</em></strong></p>
+          <p>Acuarela sobre papel</p>
+          <p>90cm x 60cm</p>
+          <p><strong>Instituto de Arte Popular Mexicano</strong></p>
+        </div>
+      </div>
+      <!-- Repetir el div de art-card para cada obra de arte -->
+      <div class="art-card-tendencia">
+        <img src="RSC/blog profile image (3).jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+        <div class="art-info-tendencia">
+          <p>Juan Carlos Méndez</p>
+          <p><strong><em>El Escritor</em></strong></p>
+          <p>Óleo sobre lienzo</p>
+          <p>50cm x 70cm</p>
+          <p><strong>Instituto de Arte Popular Mexicano</strong></p>
+        </div>
+      </div>
+      <!-- Repetir el div de art-card para cada obra de arte -->
+      <div class="art-card-tendencia">
+        <img src="RSC/stunning still-life photo render of a Mexican Skul (1).jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+        <div class="art-info-tendencia">
+          <p>Lucía Fernández</p>
+          <p><strong><em>Vida y Muerte</em></strong></p>
+          <p>Óleo sobre lienzo</p>
+          <p>50 cm x 70 cm</p>
+          <p><strong>Instituto de Arte Popular Mexicano</strong></p>
+        </div>
+      </div>
+      <!-- Repetir el div de art-card para cada obra de arte -->
+</div>
+<div id="contenedor-espacio"></div> <!-- Contenedor de espacio -->
+
+<!-- Ventana emergente para la imagen en grande -->
+<div id="popup" class="popup-tendencia">
+    <span class="close-tendencia" onclick="closeModal()">&times;</span>
+    <img class="popup-content-tendencia" id="expandedImg">
+</div>
+<!-- cuerpo -->         
 
 <!-- PIE DE PAGINA -->   
     <div id="contenedor-imagen-fondo">
