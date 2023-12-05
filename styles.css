@@ -864,13 +864,21 @@ body, html {
 }
 
 .art-card-tendencia {
-  width: calc(25% - 20px); /* Ajusta esta línea según la cantidad de tarjetas que quieras por fila */
+  width: calc(25% - 30px); /* Ajusta esta línea según la cantidad de tarjetas que quieras por fila */
   margin: 10px;
   /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el contorno */ 
   display: flex;
   flex-direction: column;
   align-items: flex-end; /* Alinea los elementos hijos a la derecha */
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.art-card-tendencia img {
+  width: 100%; /* O el ancho específico que desees */
+  height: 100%; /* O el ancho específico que desees */
+
+  max-width: 300px; /* Tamaño máximo de la imagen */
+  max-height: 350px; /* Altura máxima de la imagen */
 
 }
 
@@ -891,6 +899,7 @@ body, html {
   margin: 2px 0;
   text-align: right; /* Alinea el texto a la derecha */
   font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif; /* Pila de fuentes actualizada */
+  font-size: small;
 }
 
 /* lienas divisoreas de estilos de arte */

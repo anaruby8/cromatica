@@ -6,7 +6,7 @@
 <!-- header -->   
 
 <!-- cuerpo --> 
-    <div id="contenedor-espacio-small"></div> <!-- Contenedor de espacio -->
+<div id="contenedor-espacio-small"></div> <!-- Contenedor de espacio -->
     <div id="contenedor-espacio"></div>
     <div id="contenedor-espacio"></div>
 
@@ -22,73 +22,86 @@
 
     <div class="container-tendencia">
         <div class="art-card-tendencia">
-          <img src="1.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+          <img src="https://image.lexica.art/full_webp/20b18d8b-9ed4-4a03-9941-bc1f81cd2cb2" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
           <div class="art-info-tendencia">
-            <p>Axl</p>
-            <p><strong><em>"Sin nombre"</em></strong></p>
-            <p></p>
+            <p>Nombre Autor</p>
+            <p><strong><em>Nombre de la Obra</em></strong></p>
+            <p>Material - Medidas</p>
             <p><strong>Exhibición</strong></p>
           </div>
         </div>
         <!-- Repetir el div de art-card para cada obra de arte -->
         <div class="art-card-tendencia">
-            <img src="3.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
-            <div class="art-info-tendencia">
-              <p>Neraldos Jonia</p>
-              <p><strong><em>"Vacio"</em></strong></p>
-              <p></p>
-              <p><strong></strong></p>
+          <img src="https://image.lexica.art/full_webp/9b848ec1-dd5b-44fd-8141-33e34f4eccb0" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+          <div class="art-info-tendencia">
+              <p>Nombre Autor</p>
+              <p><strong><em>Nombre de la Obra</em></strong></p>
+              <p>Material - Medidas</p>
+              <p><strong>Exhibición</strong></p>
             </div>
           </div>
           <!-- Repetir el div de art-card para cada obra de arte -->
           <div class="art-card-tendencia">
-            <img src="5.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+            <img src="quien3.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
             <div class="art-info-tendencia">
-              <p>Jimena JS</p>
-              <p><strong><em>"BUENOS dias"</em></strong></p>
+              <p>Nombre Autor</p>
+              <p><strong><em>Nombre de la Obra</em></strong></p>
+              <p>Material - Medidas</p>
+              <p><strong>Exhibición</strong></p>
             </div>
           </div>
           <!-- Repetir el div de art-card para cada obra de arte -->
           <div class="art-card-tendencia">
-            <img src="4.jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+            <img src="https://image.lexica.art/full_webp/2fae10cf-0148-4aa5-844d-815fce2f8d7f" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
             <div class="art-info-tendencia">
-              <p>RBD</p>
-              <p><strong><em>"Construyendo"</em></strong></p>
+              <p>Nombre Autor</p>
+              <p><strong><em>Nombre de la Obra</em></strong></p>
+              <p>Material - Medidas</p>
+              <p><strong>Exhibición</strong></p>
             </div>
           </div>
           <!-- Repetir el div de art-card para cada obra de arte -->
     </div>
     <div id="contenedor-espacio-small"></div> <!-- Contenedor de espacio -->
+
     <div class="container-tendencia">
         <div class="art-card-tendencia">
-          <img src="RSC/A cute white with brown spots cat eating ramen (1).jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+          <img src="https://image.lexica.art/full_webp/8047bbd9-a18e-4bde-9abc-15b89dc54fdc" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
           <div class="art-info-tendencia">
-            <p>AxL</p>
-            <p><strong><em>"Ramensito"</em></strong></p>
+            <p>Nombre Autor</p>
+            <p><strong><em>Nombre de la Obra</em></strong></p>
+            <p>Material - Medidas</p>
+            <p><strong>Exhibición</strong></p>
           </div>
         </div>
         <!-- Repetir el div de art-card para cada obra de arte -->
         <div class="art-card-tendencia">
-            <img src="RSC/A tan skin mayan queen all blue and gold elaborate (1).jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+            <img src="https://image.lexica.art/full_webp/c50811e7-5579-442d-98ae-c38967391e65" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
             <div class="art-info-tendencia">
-              <p>Reyna Maya</p>
-              <p><strong><em>Jimena JS</em></strong></p>
+              <p>Nombre Autor</p>
+              <p><strong><em>Nombre de la Obra</em></strong></p>
+              <p>Material - Medidas</p>
+              <p><strong>Exhibición</strong></p>
             </div>
           </div>
           <!-- Repetir el div de art-card para cada obra de arte -->
           <div class="art-card-tendencia">
-            <img src="RSC/blog profile image (3).jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+            <img src="https://image.lexica.art/full_webp/94f73928-90a7-485f-9bd7-ebe3a9b17fe0" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
             <div class="art-info-tendencia">
-              <p>Perfil</p>
-              <p><strong><em>AxL</em></strong></p>
+              <p>Nombre Autor</p>
+              <p><strong><em>Nombre de la Obra</em></strong></p>
+              <p>Material - Medidas</p>
+              <p><strong>Exhibición</strong></p>
             </div>
           </div>
           <!-- Repetir el div de art-card para cada obra de arte -->
           <div class="art-card-tendencia">
-            <img src="RSC/stunning still-life photo render of a Mexican Skul (1).jpg" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
+            <img src="https://image.lexica.art/full_webp/2fae10cf-0148-4aa5-844d-815fce2f8d7f" alt="Artwork" class="art-image-tendencia" onclick="openModal(this);">
             <div class="art-info-tendencia">
-              <p>Calavera mexicana</p>
-              <p><strong><em>RBD</em></strong></p>
+              <p>Nombre Autor</p>
+              <p><strong><em>Nombre de la Obra</em></strong></p>
+              <p>Material - Medidas</p>
+              <p><strong>Exhibición</strong></p>
             </div>
           </div>
           <!-- Repetir el div de art-card para cada obra de arte -->
@@ -100,7 +113,7 @@
         <span class="close-tendencia" onclick="closeModal()">&times;</span>
         <img class="popup-content-tendencia" id="expandedImg">
     </div>
-<!-- cuerpo -->         
+<!-- cuerpo -->          
 
 <!-- PIE DE PAGINA -->   
     <div id="contenedor-imagen-fondo">
